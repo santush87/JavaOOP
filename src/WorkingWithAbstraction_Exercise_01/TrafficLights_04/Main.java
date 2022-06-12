@@ -1,4 +1,4 @@
-package TrafficLights_04;
+package WorkingWithAbstraction_Exercise_01.TrafficLights_04;
 
 import java.util.Arrays;
 import java.util.Scanner;
