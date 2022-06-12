@@ -39,7 +39,7 @@ public class Person {
             products.add(product);
             this.money -= product.getCost();
         } else {
-            System.out.printf("%s can't afford %s%n", this.name, product.getName());
+            throw new IllegalArgumentException(String.format("%s can't afford %s", this.name, product.getName()));
         }
     }
 }
