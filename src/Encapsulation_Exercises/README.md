@@ -35,4 +35,43 @@
 
 ![Screenshot_2](https://user-images.githubusercontent.com/73018624/199023646-ba7596f3-5bac-423d-b81f-c9192d77a60a.jpg)
 
+<h2>4.	Pizza Calories</h2>
+<p>A Pizza is made of dough and different toppings. You should model a class Pizza which should have a name, dough, and toppings as fields. Every type of ingredient should have its class.</p>
 
+![Screenshot_2](https://user-images.githubusercontent.com/73018624/199567111-311ca3c0-f986-4cbd-8b3f-3c18b89e2667.jpg)
+
+<p>Every ingredient has different fields: the dough can be white or wholegrain and in addition, it can be crispy, chewy, or homemade. The toppings can be of type meat, veggies, cheese, or sauce. Every ingredient should weigh grams and a method for calculating its calories according to its type. Calories per gram are calculated through modifiers. Every ingredient has 2 calories per gram as a base and a modifier that gives the exact calories.</p>
+
+![Screenshot_3](https://user-images.githubusercontent.com/73018624/199567274-71ccefeb-ba49-416d-8ef2-5c39afbd4e15.jpg)
+
+<p>Your job is to model the classes in such a way that they are properly encapsulated and to provide a public method for every pizza that calculates its calories according to the ingredients it has.</p>
+
+![Screenshot_4](https://user-images.githubusercontent.com/73018624/199567476-09e2e1e1-94e5-44ad-8d42-a5b16c15fd75.jpg)
+
+<p>For example, the white dough has a modifier of 1.5, a chewy dough has a modifier of 1.1, which means that a white chewy dough weighing 100 grams will have (2 * 100) * 1.5 * 1.1 = 330.00 total calories.</p>
+<p>For example, meat has a modifier of 1.2, which means that meat weighing 50 grams will have (2 * 50) * 1.2 = 120.00 total calories.</p>
+<h3>Data Validation</h3>
+<p>Data Validation must be in the order of the Input Data.</p>
+<p>•	If an invalid flour type or an invalid baking technique is given an exception is thrown with the message "Invalid type of dough.".</p>
+<p>•	If dough weight is outside of the range [1..200] throw an exception with the message "Dough weight should be in the range [1..200]."</p>
+<p>•	If topping is not one of the provided types throw an exception with the message "Cannot place {name of invalid argument} on top of your pizza."</p>
+<p>•	If topping weight is outside of the range [1..50] throw an exception with the message "{Topping type name} weight should be in the range [1..50].".</p>
+<p>•	If the name of the pizza is empty, only whitespace or longer than 15 symbols throw an exception with the message "Pizza name should be between 1 and 15 symbols.".</p>
+<p>•	If a number of toppings are outside of the range [0..10] throw an exception with the message "Number of toppings should be in range [0..10].".</p>
+<p>The input for a pizza consists of several lines:</p>
+<p>•	On the first line is the pizza name and the number of toppings it has in the format: 
+Pizza {pizzaName} {numberOfToppings}
+</p>
+<p>•	On the second line you will get input for the dough in the format: 
+Dough {flourType} {bakingTechnique} {weightInGrams}
+</p>
+<p>•	On the next lines, you will receive every topping the pizza has, until an"END" command is given: 
+Topping {toppingType} {weightInGrams}
+</p>
+<p>If the creation of the pizza was successfully printed on a single line the name of the pizza and the total calories it has rounded to the second digit after the decimal point.</p>
+
+<h3>Examples</h3>
+
+![Screenshot_5](https://user-images.githubusercontent.com/73018624/199568166-c96835d8-1935-4e58-adf0-03688441a543.jpg)
+
+<p></p>
